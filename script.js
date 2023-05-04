@@ -19,7 +19,6 @@ window.onload = function() {
 function doLike() {
     upCount++;
     likesBtn.innerText = "👍" + upCount;
-    document.cookie = "username=John Doe";
     disableButtons();
     setCookie();
     console.log("you liked this");
@@ -28,7 +27,6 @@ function doLike() {
 function doDislike() {
     downCount++;
     dislikesBtn.innerText = "👎" + downCount;
-    document.cookie = "username=John Doe";
     disableButtons();
     setCookie();
     console.log("you disliked this");
